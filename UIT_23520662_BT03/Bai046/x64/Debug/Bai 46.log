@@ -1,0 +1,4 @@
+﻿  Bai46.cpp
+D:\UIT\NhapMonLapTrinh\BTVN\Bai 46\Bai46.cpp(12,15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Bai 46.vcxproj -> D:\UIT\NhapMonLapTrinh\btnvNMLT\x64\Debug\Bai 46.exe
+D:\UIT\NhapMonLapTrinh\BTVN\Bai 46\Bai46.cpp(12): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).

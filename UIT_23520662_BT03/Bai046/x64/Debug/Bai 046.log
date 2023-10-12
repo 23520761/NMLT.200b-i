@@ -1,0 +1,5 @@
+﻿D:\ProGram\Microsoft\Visual Studio\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Bai 46.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Bai46.cpp
+D:\UIT\NhapMonLapTrinh\BTVN\Bai 46\Bai46.cpp(36,15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Bai 046.vcxproj -> D:\UIT\NhapMonLapTrinh\btvnNMLT\x64\Debug\Bai 046.exe
+D:\UIT\NhapMonLapTrinh\BTVN\Bai 46\Bai46.cpp(36): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
