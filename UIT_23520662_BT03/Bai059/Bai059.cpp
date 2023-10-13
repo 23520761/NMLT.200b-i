@@ -3,9 +3,27 @@
 #include <iomanip>
 #include <ctime>
 using namespace std;
+
 void NhapMang(int[], int&);
 void XuatMang(int[], int);
 int DemGiaTri(int[], int);
+
+int main()
+{
+	int a[500];
+	int n;
+	NhapMang(a, n);
+	cout << endl;
+	XuatMang(a, n);
+	cout << " ||\n";
+	cout << "--------------------------------\n\n";
+	cout << "--------------------------------\n";
+	cout << "So luong phan tu lien ke nhau deu chan la: ";
+	cout << DemGiaTri(a, n);
+	cout << "\n--------------------------------\n";
+	cout << endl;
+	return 0;
+}
 
 void NhapMang(int a[], int& n)
 {
@@ -46,21 +64,4 @@ int DemGiaTri(int a[], int n)
 		dem++;
 	return dem;
 
-}
-
-int main()
-{
-	int a[500];
-	int n;
-	NhapMang(a, n);
-	cout << endl;
-	XuatMang(a, n);
-	cout << " ||\n";
-	cout << "--------------------------------\n\n";
-	cout << "--------------------------------\n";
-	cout << "So luong phan tu lien ke nhau deu chan la: ";
-	cout << DemGiaTri(a, n);
-	cout << "\n--------------------------------\n";
-	cout << endl;
-	return 0;
 }

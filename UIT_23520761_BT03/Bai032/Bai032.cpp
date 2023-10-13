@@ -42,7 +42,7 @@ void LietKe(float a[], int n)
 			for (int k = 0; k < n; k++)
 				if (i != j && j != k && i != k && a[i] == a[j] + a[k])
 				{
-					cout << "(" << a[i] << "," << a[j] << "," << a[k] << ")";
+					cout << "(" << a[i] << "," << a[j] << "," << a[k] << ")" << " ";
 				}
 		if (i < n - 5)
 			cout << endl;

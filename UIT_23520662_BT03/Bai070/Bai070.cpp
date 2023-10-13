@@ -3,11 +3,38 @@
 #include <iomanip>
 #include <ctime>
 using namespace std;
+
 void NhapMang(int[], int&);
 void XuatMang(int[], int);
 int DemGiaTri(int[], int, int[], int, int[]);
 int TanSuat(int[], int, int);
 void KetQua(int[], int);
+
+int main()
+{
+	int a[500];
+	int n;
+	NhapMang(a, n);
+	cout << endl;
+	int b[500];
+	int k;
+	int temp[500];
+	NhapMang(b, k);
+	cout << endl;
+	XuatMang(a, n);
+	cout << " ||\n";
+	XuatMang(b, k);
+	cout << " ||\n";
+	cout << "--------------------------------\n\n";
+	cout << "--------------------------------\n";
+	cout << "Cac so chi xuat hien o 1 mang la: ";
+	int so = DemGiaTri(a, n, b, k, temp);
+	KetQua(temp, so);
+	cout << " || ";
+	cout << "\n--------------------------------\n";
+	cout << endl;
+	return 0;
+}
 
 void NhapMang(int a[], int& n)
 {
@@ -124,30 +151,4 @@ void KetQua(int temp[], int n)
 			cout << " || " << temp[i];
 		}
 	}
-}
-
-int main()
-{
-	int a[500];
-	int n;
-	NhapMang(a, n);
-	cout << endl;
-	int b[500];
-	int k;
-	int temp[500];
-	NhapMang(b, k);
-	cout << endl;
-	XuatMang(a, n);
-	cout << " ||\n";
-	XuatMang(b, k);
-	cout << " ||\n";
-	cout << "--------------------------------\n\n";
-	cout << "--------------------------------\n";
-	cout << "Cac so chi xuat hien o 1 mang la: ";
-	int so = DemGiaTri(a, n, b, k, temp);
-	KetQua(temp, so);
-	cout << " || ";
-	cout << "\n--------------------------------\n";
-	cout << endl;
-	return 0;
 }

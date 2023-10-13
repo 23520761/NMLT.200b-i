@@ -3,12 +3,32 @@
 #include <iomanip>
 #include <ctime>
 using namespace std;
+
 void NhapMang(float[], int&);
 void XuatMang(float[], int);
 float TongGiaTri(float[], int, float);
 int DemGiaTri(float[], int, float);
 float TrungBinhCong(float[], int, float);
 
+int main()
+{
+	float a[500];
+	int n;
+	float x;
+	cout << "Nhap x: ";
+	cin >> x;
+	NhapMang(a, n);
+	cout << endl;
+	XuatMang(a, n);
+	cout << " ||\n";
+	cout << "--------------------------------\n\n";
+	cout << "--------------------------------\n";
+	cout << "Trung binh cac so la: ";
+	cout << TrungBinhCong(a, n, x);
+	cout << "\n--------------------------------\n";
+	cout << endl;
+	return 0;
+}
 
 void NhapMang(float a[], int& n)
 {
@@ -62,22 +82,3 @@ float TrungBinhCong(float a[], int n, float x)
 	return s / dem;
 }
 
-int main()
-{
-	float a[500];
-	int n;
-	float x;
-	cout << "Nhap x: ";
-	cin >> x;
-	NhapMang(a, n);
-	cout << endl;
-	XuatMang(a, n);
-	cout << " ||\n";
-	cout << "--------------------------------\n\n";
-	cout << "--------------------------------\n";
-	cout << "Trung binh cac so la: ";
-	cout << TrungBinhCong(a, n, x);
-	cout << "\n--------------------------------\n";
-	cout << endl;
-	return 0;
-}

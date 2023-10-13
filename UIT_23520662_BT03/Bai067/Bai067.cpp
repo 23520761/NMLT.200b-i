@@ -3,11 +3,32 @@
 #include <iomanip>
 #include <ctime>
 using namespace std;
+
 void NhapMang(int[], int&);
 void XuatMang(int[], int);
 int TanSuat(int[], int, int);
 int DemGiaTri(int[], int, int[], int);
 
+int main()
+{
+	int a[500];
+	int n;
+	int b[500];
+	int c;
+	NhapMang(a, n);
+	cout << endl;
+	NhapMang(b, c);
+	cout << endl;
+	XuatMang(a, n);
+	cout << " ||\n";
+	cout << "--------------------------------\n\n";
+	cout << "--------------------------------\n";
+	cout << "So luong phan tu xuat hien 1 lan duy nhat trong ca 2 mang la: ";
+	cout << DemGiaTri(a, n, b, c);
+	cout << "\n--------------------------------\n";
+	cout << endl;
+	return 0;
+}
 
 void NhapMang(int a[], int& n)
 {
@@ -64,25 +85,4 @@ int DemGiaTri(int a[], int n, int b[], int m)
 			dem++;
 	}
 	return dem;
-}
-
-int main()
-{
-	int a[500];
-	int n;
-	int b[500];
-	int c;
-	NhapMang(a, n);
-	cout << endl;
-	NhapMang(b, c);
-	cout << endl;
-	XuatMang(a, n);
-	cout << " ||\n";
-	cout << "--------------------------------\n\n";
-	cout << "--------------------------------\n";
-	cout << "So luong phan tu xuat hien 1 lan duy nhat trong ca 2 mang la: ";
-	cout << DemGiaTri(a, n, b, c);
-	cout << "\n--------------------------------\n";
-	cout << endl;
-	return 0;
 }

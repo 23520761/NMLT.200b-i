@@ -3,10 +3,28 @@
 #include <iomanip>
 #include <ctime>
 using namespace std;
+
 void NhapMang(float[], int&);
 void XuatMang(float[], int);
 float LonNhat(float[], int);
 int DemLonNhat(float[], int);
+
+int main()
+{
+	float a[500];
+	int n;
+	NhapMang(a, n);
+	cout << endl;
+	XuatMang(a, n);
+	cout << " ||\n";
+	cout << "--------------------------------\n\n";
+	cout << "--------------------------------\n";
+	cout << "So luong so lon nhat la: ";
+	cout << DemLonNhat(a, n);
+	cout << "\n--------------------------------\n";
+	cout << endl;
+	return 0;
+}
 
 void NhapMang(float a[], int& n)
 {
@@ -49,21 +67,4 @@ int DemLonNhat(float a[], int n)
 		if (a[i] == ln)
 			dem++;
 	return dem;
-}
-
-int main()
-{
-	float a[500];
-	int n;
-	NhapMang(a, n);
-	cout << endl;
-	XuatMang(a, n);
-	cout << " ||\n";
-	cout << "--------------------------------\n\n";
-	cout << "--------------------------------\n";
-	cout << "So luong so lon nhat la: ";
-	cout << DemLonNhat(a, n);
-	cout << "\n--------------------------------\n";
-	cout << endl;
-	return 0;
 }

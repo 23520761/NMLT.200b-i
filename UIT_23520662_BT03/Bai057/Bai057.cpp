@@ -3,11 +3,33 @@
 #include <iomanip>
 #include <ctime>
 using namespace std;
+
 void NhapMang(int[], int&);
 void XuatMang(int[], int);
 int DemChan(int[], int);
 int DemLe(int[], int);
-int TuongQuan(int[], int);
+int TuongQuanChanLe(int[], int);
+
+int main()
+{
+	int a[500];
+	int n;
+	NhapMang(a, n);
+	cout << endl;
+	XuatMang(a, n);
+	cout << " ||\n";
+	cout << "--------------------------------\n\n";
+	cout << "--------------------------------\n";
+	if (TuongQuanChanLe(a, n) == 0)
+		cout << "So le = So Chan";
+	else if (TuongQuanChanLe(a, n) == 1)
+		cout << "So le < So Chan";
+	else if (TuongQuanChanLe(a, n) == -1)
+		cout << "So le > So Chan";
+	cout << "\n--------------------------------\n";
+	cout << endl;
+	return 0;
+}
 
 void NhapMang(int a[], int& n)
 {
@@ -59,26 +81,5 @@ int TuongQuanChanLe(int a[], int n)
 		return -1;
 	if (x < y)
 		return 1;
-	return 0;
-}
-
-int main()
-{
-	int a[500];
-	int n;
-	NhapMang(a, n);
-	cout << endl;
-	XuatMang(a, n);
-	cout << " ||\n";
-	cout << "--------------------------------\n\n";
-	cout << "--------------------------------\n";
-	if (TuongQuanChanLe(a, n) == 0)
-		cout << "So le = So Chan";
-	else if (TuongQuanChanLe(a, n) == 1)
-		cout << "So le < So Chan";
-	else if (TuongQuanChanLe(a, n) == -1)
-		cout << "So le > So Chan";
-	cout << "\n--------------------------------\n";
-	cout << endl;
 	return 0;
 }

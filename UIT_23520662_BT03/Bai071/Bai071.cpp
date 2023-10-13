@@ -3,9 +3,30 @@
 #include <iomanip>
 #include <ctime>
 using namespace std;
+
 void NhapMang(int[], int&);
 void XuatMang(int[], int);
 int DemXuatHien(int[], int, int[], int);
+
+int main()
+{
+	int a[500], b[500];
+	int n, k;
+	NhapMang(a, n);
+	cout << endl;
+	NhapMang(b, k);
+	cout << endl;
+	XuatMang(a, n);
+	XuatMang(b, k);
+	cout << " ||\n";
+	cout << "--------------------------------\n\n";
+	cout << "--------------------------------\n";
+	cout << "So lan a xuat hien trong b la: ";
+	cout << DemXuatHien(a, n, b, k);
+	cout << "\n--------------------------------\n";
+	cout << endl;
+	return 0;
+}
 
 void NhapMang(int a[], int& n)
 {
@@ -47,24 +68,4 @@ int DemXuatHien(int a[], int n, int b[], int m)
 			dem++;
 	}
 	return dem;
-}
-
-int main()
-{
-	int a[500], b[500];
-	int n, k;
-	NhapMang(a, n);
-	cout << endl;
-	NhapMang(b, k);
-	cout << endl;
-	XuatMang(a, n);
-	XuatMang(b, k);
-	cout << " ||\n";
-	cout << "--------------------------------\n\n";
-	cout << "--------------------------------\n";
-	cout << "So lan a xuat hien trong b la: ";
-	cout << DemXuatHien(a, n, b, k);
-	cout << "\n--------------------------------\n";
-	cout << endl;
-	return 0;
 }

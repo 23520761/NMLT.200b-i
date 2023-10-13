@@ -21,6 +21,7 @@ void Nhap(float a[], int& n)
 {
 	cout << "Nhap n: ";
 	cin >> n;
+	cout << "Nhap mang: ";
 	for (int i = 0; i < n; i++)
 		cin >> a[i];
 }

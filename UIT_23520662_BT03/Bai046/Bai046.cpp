@@ -3,12 +3,30 @@
 #include <iomanip>
 #include <ctime>
 using namespace std;
+
 void NhapMang(int[], int&);
 void XuatMang(int[], int);
 bool ktNguyenTo(int);
 int DemNguyenTo(int[], int);
 int TongNguyenTo(int[], int);
 float TrungBinhCong(int[], int);
+
+int main()
+{
+	int a[500];
+	int n;
+	NhapMang(a, n);
+	cout << endl;
+	XuatMang(a, n);
+	cout << " ||\n";
+	cout << "--------------------------------\n\n";
+	cout << "--------------------------------\n";
+	cout << "Trung binh cac so la: ";
+	cout << fixed << setprecision(1) << TrungBinhCong(a, n);
+	cout << "\n--------------------------------\n";
+	cout << endl;
+	return 0;
+}
 
 void NhapMang(int a[], int& n)
 {
@@ -69,21 +87,4 @@ bool ktNguyenTo(int k)
 	if (dem == 2)
 		return true;
 	return false;
-}
-
-int main()
-{
-	int a[500];
-	int n;
-	NhapMang(a, n);
-	cout << endl;
-	XuatMang(a, n);
-	cout << " ||\n";
-	cout << "--------------------------------\n\n";
-	cout << "--------------------------------\n";
-	cout << "Trung binh cac so la: ";
-	cout << TrungBinhCong(a, n);
-	cout << "\n--------------------------------\n";
-	cout << endl;
-	return 0;
 }

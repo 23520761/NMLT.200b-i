@@ -33,7 +33,7 @@ void Xuat(int a[], int n)
 void LietKe(int a[], int n)
 {
 	cout << "\nCac so chan co trong ma la: ";
-	for (int i = 0; i < n - 1; i++)
+	for (int i = 0; i <= n - 1; i++)
 		if (a[i] % 2 == 0)
 			cout << setw(6) << a[i];
 }
