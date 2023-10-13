@@ -1,0 +1,3 @@
+﻿  Bai138.cpp
+C:\Users\Admin\Desktop\làm bài lập trình\BT3\UIT_23520761_BT03\Bai138\Bai138.cpp(26,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Bai138.vcxproj -> C:\Users\Admin\Desktop\làm bài lập trình\BT3\UIT_23520761_BT03\x64\Debug\Bai138.exe

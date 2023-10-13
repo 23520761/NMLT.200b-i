@@ -1,0 +1,6 @@
+﻿  Bai140.cpp
+C:\Users\Admin\Desktop\làm bài lập trình\BT3\UIT_23520761_BT03\Bai140\Bai140.cpp(27,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Admin\Desktop\làm bài lập trình\BT3\UIT_23520761_BT03\Bai140\Bai140.cpp(52,5): error C2146: syntax error: missing ';' before identifier 'swap'
+C:\Users\Admin\Desktop\làm bài lập trình\BT3\UIT_23520761_BT03\Bai140\Bai140.cpp(52,1): error C2429: language feature 'init-statements in if/switch' requires compiler flag '/std:c++17'
+C:\Users\Admin\Desktop\làm bài lập trình\BT3\UIT_23520761_BT03\Bai140\Bai140.cpp(52,20): error C2143: syntax error: missing ')' before ';'
+C:\Users\Admin\Desktop\làm bài lập trình\BT3\UIT_23520761_BT03\Bai140\Bai140.cpp(52,20): warning C4390: ';': empty controlled statement found; is this the intent?

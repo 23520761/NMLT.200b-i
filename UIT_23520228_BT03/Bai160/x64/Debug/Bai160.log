@@ -1,0 +1,4 @@
+﻿  Bai160.cpp
+C:\Users\Admin\Desktop\làm bài lập trình\BT3\UIT_23520761_BT03\Bai160\Bai160.cpp(24,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Admin\Desktop\làm bài lập trình\BT3\UIT_23520761_BT03\Bai160\Bai160.cpp(26,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Desktop\làm bài lập trình\BT3\UIT_23520761_BT03\Bai160\Bai160.cpp(17): error C4700: uninitialized local variable 'k' used
